@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.tout{
+    position: relative;
+    width: 75%;
+    /*max-width: 1000px;*/
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.gauche{
+    display: grid;
+    grid-template-columns: repeat(1,3fr);
+}
+/* HAUT */
+.haut{
+    position: relative;
+    background-image: url(tof/319new.jpg) ;
+}
+.en-tete{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px;
+}
+.srch{
+    padding: 10%;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: row;
+}
+.croix{
+}
+.profile .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    overflow: hidden;
+}
+.profile .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+/*      MILIEU */
+.milieu{
+    background: blue;
+    font-size: 2em;
+    position: relative;
+    padding: 40px;
+}
+.text{
+    margin: 20px;
+}
+
+.infos ul{
+    position: relative;
+}
+.infos ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.infos ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.infos ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.nombre{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin-bottom: -50px;
+    
+}
+/* BAS */
+.bas{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+    font-size: 1.5em;
+}
+.competences ul li{
+    list-style: none;
+}
+.comp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comp img{
+    height: 50px;
+    width: 50px;
+}
+.bas{
+    background-color: #fff;
+}
+.competences .pourcentage{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+    
+}
+
+.competences .pourcentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.tout .droite{
+    position: relative;
+    background: #eeeeee ;
+    padding: 40px;
+    font-size: 1.5em;
+    
+}
+.englobe{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 50px;
+}
+.interet{
+    background: #fff;
+}
+.espace-titre{
+    margin-left: 40px;
+}
+.langues{
+    margin-left: 60px;
+    background: #fff;
+}
+/*SECTION 1*/
+.joindre{
+    display: flex;
+    flex-direction: row;
+}
+.exp{
+    background: #fff;
+}
+.exp-color{
+    color: #fff;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.marge{
+    margin-left: 50px;
+    margin-top: 20px;
+    overflow-y: visible;
+}
+.icon-titre{
+    margin-left: 25px;
+}
+.titre{
+    margin-left: 25px;
+}
+.recule{
+    margin-left: 200px;
+}
+
+.exp-color h2 .italic{
+    text-align: center;
+}
+.exp-color .italic{
+    font-style: italic;
+}
+.exp h5{
+    color: #03a9fa;
+}
+.exp ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+/*SECTION 2*/
+.interet .italic{
+    font-style: italic;
+}
+/*SECTION 3*/
+.langues .italic{
+    font-style: italic;
+}
+/*SECTION 4*/
+.cursus-color{
+    color: #fff;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.cursus{
+    background: #fff;
+}
+.icon-titre2{
+    margin-left: 50px;
+}
+.cursus{
+    margin-top: 50px;
+}
+.cursus-color .italic{
+    font-style: italic;
+}
+.cursus ul li .italic{
+    font-style: italic;
+}
+.cursus h5{
+    color: #03a9fa;
+}
+.cursus ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
